@@ -9,10 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+//        HStack {
+//                Image("lana")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .frame(maxWidth: .infinity, maxHeight: 170)
+//
+//                VStack {
+//                    Text("Test")
+//                    Text("Test 2")
+//                }
+//                .frame(maxWidth: .infinity)
+//            }
+//            .frame(maxWidth: .infinity, maxHeight: 170)
+//            .background(Color.red)
+//            .padding()
+//            .fixedSize(horizontal: false, vertical: true)
         
         ZStack() {
             Color(.systemGray5)
                 .ignoresSafeArea()
+            
+            
+            
             
             // Content Container
             VStack(spacing:30.0){
@@ -50,9 +69,10 @@ struct ContentView: View {
                         
                     }
                     HStack(){
-                        Text("Alexandria Ocasio-Cortez").font(.headline).fontWeight(.bold).multilineTextAlignment(.leading)
-                        Text("U.S Representative")
-                    }.background(Color.red).frame(maxWidth: .infinity, alignment: .leading)
+                        Text("Alexandria Ocasio Cortez").font(.title2).fontWeight(.bold).multilineTextAlignment(.leading).frame(maxWidth:.infinity)
+                        Text("United States Representative").font(.headline).frame(maxWidth:.infinity).multilineTextAlignment(.leading)
+                    }
+                    //.frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack(){
                         Text("Representative of New York's 14th Congressional District. Progressive advocate for immigrant and racial justice, as well as reproductive rights.")
