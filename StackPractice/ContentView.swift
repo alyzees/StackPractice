@@ -22,6 +22,7 @@ struct ContentView: View {
                 VStack{
                     Text("The Albums I would take with me to space if the world ended.")
                         .multilineTextAlignment(.center)
+                    Text("🥳")
                 }
                 
                 
