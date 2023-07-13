@@ -41,7 +41,7 @@ struct ContentView: View {
                 
                 // Section 2
                 
-                VStack(){
+                VStack(spacing:20.0){
                     VStack(){
                         Image("AOC").resizable().aspectRatio(contentMode: .fit).cornerRadius(15)
                         
@@ -49,13 +49,13 @@ struct ContentView: View {
                     HStack(){
                         Text("Alexandria Ocasio-Cortez").font(.headline).fontWeight(.bold).multilineTextAlignment(.leading)
                         Text("U.S Representative")
-                    }.background(Rectangle().foregroundColor(.red)).frame(maxWidth:.infinity)
+                    }.background(Color.red).frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack(){
                         Text("Representative of New York's 14th Congressional District. Progressive advocate for immigrant and racial justice, as well as reproductive rights.")
                     }
                     
-                }.frame(width: 350.0).padding(.all, 15.0).background(Rectangle() .foregroundColor(.teal)).cornerRadius(15)
+                }.frame(width: 300.0).padding(.all, 15.0).background(Rectangle() .foregroundColor(.teal)).cornerRadius(15)
                 
                 
             }
