@@ -22,6 +22,7 @@ struct ContentView: View {
                 VStack{
                     Text("The Albums I would take with me to space if the world ended.")
                         .multilineTextAlignment(.center)
+                    Text("🥳")
                 }
                 
                 
@@ -34,6 +35,8 @@ struct ContentView: View {
                         
                         
                         Image("frank").resizable().aspectRatio(contentMode: .fit).frame(width: 200)
+                        
+                        Image("selena").resizable().aspectRatio(contentMode: .fit).frame(width: 200)
                     }
                 }.frame(width:350)
                 
